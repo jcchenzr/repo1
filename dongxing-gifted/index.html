@@ -1,31 +1,72 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>東興資優班練習檔</title>
-  <style>
-    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; margin: 0; padding: 32px 20px; background:#f6f8fb; color:#1f2937; }
-    .wrap { max-width: 840px; margin: 0 auto; background:#fff; border-radius:20px; padding:32px; box-shadow:0 12px 40px rgba(0,0,0,.08); }
-    h1 { margin-top:0; font-size: 32px; }
-    p { line-height:1.7; color:#4b5563; }
-    ul { padding-left: 20px; }
-    li { margin: 12px 0; }
-    a { color:#2563eb; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .note { margin-top:24px; font-size:14px; color:#6b7280; }
-    code { background:#f3f4f6; padding:2px 6px; border-radius:6px; }
-  </style>
+  <title>東興資優班練習檔｜閱讀優化版</title>
+  <meta name="description" content="把東興資優班練習題本與解答本整理成可直接閱讀的 HTML 頁面。" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <main class="wrap">
+  <div class="topnav">
+    <div class="container">
+      <a href="./questions.html">看題目</a>
+      <a href="./answers.html">看解答</a>
+      <a href="./dongxing-gifted-questions.pdf">下載題目 PDF</a>
+      <a href="./dongxing-gifted-answers.pdf">下載解答 PDF</a>
+    </div>
+  </div>
+
+  <header class="hero container">
+    <span class="badge">READING OPTIMIZED</span>
     <h1>東興資優班練習檔</h1>
-    <p>這頁提供兩份可直接下載的 PDF 檔案。</p>
-    <ul>
-      <li><a href="./dongxing-gifted-questions.pdf">題目本 PDF</a></li>
-      <li><a href="./dongxing-gifted-answers.pdf">解答本 PDF</a></li>
-    </ul>
-    <p class="note">備註：workspace 內原始檔名為 <code>東興國中資優班_練習題本_題目本.pdf</code> 與 <code>東興國中資優班_練習題本_解答本.pdf</code>，這裡改用較好分享的英文檔名發佈。</p>
+    <p>已把兩份 PDF 轉成比較適合手機與網頁閱讀的 HTML 版本，直接點進去就能看，不用先下載 PDF。</p>
+    <div class="meta">
+      <span>共 20 題</span>
+      <span>題目本 + 解答本</span>
+      <span>適讀：國小四年級起</span>
+      <span>GitHub Pages 發佈</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="notice">
+      來源 PDF 的原始檔名是 <code>東興國中資優班_練習題本_題目本.pdf</code> 與 <code>東興國中資優班_練習題本_解答本.pdf</code>；
+      內容標示為「國小四年級起」，這裡保留內容但改成較好閱讀、較好分享的網頁版。
+    </div>
+
+    <section class="grid cards">
+      <article class="card">
+        <h2>題目頁</h2>
+        <p>把題目依主題分成五個區塊，閱讀起來比 PDF 更順，也比較適合手機查看。</p>
+        <div class="btns">
+          <a class="btn" href="./questions.html">直接閱讀題目</a>
+          <a class="btn secondary" href="./dongxing-gifted-questions.pdf">下載 PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>解答頁</h2>
+        <p>每題都附上精簡答案與簡要解析，方便家長或學生快速對照。</p>
+        <div class="btns">
+          <a class="btn" href="./answers.html">直接閱讀解答</a>
+          <a class="btn secondary" href="./dongxing-gifted-answers.pdf">下載 PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>適合怎麼用</h2>
+        <p>可以先讓孩子看題目頁獨立作答，再打開解答頁對照；也可以直接把這個網址傳給別人閱讀。</p>
+        <div class="btns">
+          <a class="btn secondary" href="./questions.html#math">從數學題開始</a>
+          <a class="btn secondary" href="./answers.html#reading">跳到閱讀理解解答</a>
+        </div>
+      </article>
+    </section>
   </main>
+
+  <footer class="container footer">
+    這是由 PDF 內容整理而成的 HTML 閱讀版，保留原始意思並優化段落與版面。
+  </footer>
 </body>
 </html>
