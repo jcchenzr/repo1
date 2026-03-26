@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>東興資優班練習題本｜題目頁</title>
-  <meta name="description" content="東興資優班練習題本的閱讀優化版 HTML 題目頁。" />
+  <meta name="description" content="東興資優班練習題本的閱讀優化版 HTML 題目頁，支援每題展開答案。" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -16,18 +16,18 @@
       <a href="#writing">語文表達</a>
       <a href="#science">自然科學</a>
       <a href="#logic">邏輯圖形</a>
-      <a href="./answers.html">看解答</a>
+      <a href="./answers.html">完整解答頁</a>
     </div>
   </div>
 
   <header class="hero container">
-    <span class="badge">QUESTIONS</span>
+    <span class="badge">QUESTIONS + INLINE ANSWERS</span>
     <h1>東興資優班練習題本</h1>
-    <p>建議先獨立作答，再對照解答本；如果孩子卡住，可以先請他說出自己的想法，不要太快提示。</p>
+    <p>現在每一題都可以直接點開答案，不用再在題目頁和解答頁之間來回切換。</p>
     <div class="meta">
       <span>20 題</span>
       <span>五大題型</span>
-      <span>閱讀優化排版</span>
+      <span>每題可展開答案</span>
     </div>
   </header>
 
@@ -38,12 +38,36 @@
         <p>從找規律、餘數、幾何、排列組合到邏輯判斷，重點是說明理由，不只是答對。</p>
       </header>
       <div class="qa-grid">
-        <article class="qa-card"><span class="num">第 1 題</span><h3>找規律</h3><p>找規律：3、7、15、31、63，下一個數是什麼？請說明理由。</p></article>
-        <article class="qa-card"><span class="num">第 2 題</span><h3>糖果平均分配</h3><p>小明把一些糖果平均分給 4 個朋友，最後剩下 3 顆；如果改成平均分給 5 個朋友，最後剩下 4 顆。已知糖果總數不到 40 顆，請問共有幾顆？</p></article>
-        <article class="qa-card"><span class="num">第 3 題</span><h3>長方形周長</h3><p>一個長方形周長是 30 公分，長比寬多 3 公分。這個長方形的長和寬各是多少？</p></article>
-        <article class="qa-card"><span class="num">第 4 題</span><h3>四位數排列</h3><p>有 1、2、3、4 四張數字卡，每張只能用一次，可以排成幾個大於 3000 的四位數？</p></article>
-        <article class="qa-card"><span class="num">第 5 題</span><h3>跑步名次</h3><p>甲、乙、丙三人比賽跑步。已知甲不是第一名，乙不是第三名，丙不是第一名。請問名次能唯一決定嗎？</p></article>
-        <article class="qa-card"><span class="num">第 6 題</span><h3>水池注水</h3><p>有一個水池，第一天注入全池的 1/2，第二天再注入剩下的 1/2，第三天再注入剩下的 1/2。三天後水池裡有幾分之幾的水？</p></article>
+        <article class="qa-card">
+          <span class="num">第 1 題</span><h3>找規律</h3>
+          <p>找規律：3、7、15、31、63，下一個數是什麼？請說明理由。</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>127。<br><strong>解析：</strong>前一個數乘以 2 再加 1，所以 63 × 2 + 1 = 127。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 2 題</span><h3>糖果平均分配</h3>
+          <p>小明把一些糖果平均分給 4 個朋友，最後剩下 3 顆；如果改成平均分給 5 個朋友，最後剩下 4 顆。已知糖果總數不到 40 顆，請問共有幾顆？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>19 顆。<br><strong>解析：</strong>同時符合除以 4 餘 3、除以 5 餘 4，也就是比 20 的倍數少 1；40 以內符合的是 19。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 3 題</span><h3>長方形周長</h3>
+          <p>一個長方形周長是 30 公分，長比寬多 3 公分。這個長方形的長和寬各是多少？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>長 9 公分，寬 6 公分。<br><strong>解析：</strong>先由周長得到長 + 寬 = 15，再用長比寬多 3 解出答案。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 4 題</span><h3>四位數排列</h3>
+          <p>有 1、2、3、4 四張數字卡，每張只能用一次，可以排成幾個大於 3000 的四位數？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>12 個。<br><strong>解析：</strong>千位只能是 3 或 4，各有 3! = 6 種，所以共 12 種。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 5 題</span><h3>跑步名次</h3>
+          <p>甲、乙、丙三人比賽跑步。已知甲不是第一名，乙不是第三名，丙不是第一名。請問名次能唯一決定嗎？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>不能唯一決定。<br><strong>解析：</strong>這題重點不是猜名次，而是發現條件不足，無法推出唯一結果。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 6 題</span><h3>水池注水</h3>
+          <p>有一個水池，第一天注入全池的 1/2，第二天再注入剩下的 1/2，第三天再注入剩下的 1/2。三天後水池裡有幾分之幾的水？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>7/8。<br><strong>解析：</strong>第一天後是 1/2，第二天變 3/4，第三天變 7/8。</div></details>
+        </article>
       </div>
     </section>
 
@@ -52,15 +76,32 @@
         <h2>二、閱讀理解</h2>
         <p>先讀短文，再回答問題。這題重點在於抓住「兼顧美觀與實用」的核心意思。</p>
       </header>
-      <article class="card">
+      <article class="card reading-passage">
         <h3>短文</h3>
         <p>學校想在操場旁邊種樹。有人主張種開花的樹，因為春天會很漂亮；也有人主張種常綠樹，因為一年四季都有樹蔭。老師最後決定兩種都種，理由是校園不只需要美觀，也要兼顧實用。開花樹可以讓校園更有季節變化，常綠樹則能在炎熱的天氣提供穩定的遮蔭。</p>
       </article>
       <div class="qa-grid">
-        <article class="qa-card"><span class="num">第 7 題</span><h3>老師最後的決定</h3><p>根據短文，老師最後的決定是什麼？</p></article>
-        <article class="qa-card"><span class="num">第 8 題</span><h3>詞句理解</h3><p>文中「兼顧美觀，也要兼顧實用」的意思最接近哪一項？</p><ul><li>A. 只看外表</li><li>B. 同時考慮不同需求</li><li>C. 先實用再美觀</li><li>D. 不需要討論</li></ul></article>
-        <article class="qa-card"><span class="num">第 9 題</span><h3>補充考量</h3><p>如果你是老師，你還可能補充哪一個考量最合理？</p></article>
-        <article class="qa-card"><span class="num">第 10 題</span><h3>主旨判斷</h3><p>這篇短文最主要想表達什麼？</p></article>
+        <article class="qa-card">
+          <span class="num">第 7 題</span><h3>老師最後的決定</h3>
+          <p>根據短文，老師最後的決定是什麼？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>老師決定兩種樹都種。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 8 題</span><h3>詞句理解</h3>
+          <p>文中「兼顧美觀，也要兼顧實用」的意思最接近哪一項？</p>
+          <ul><li>A. 只看外表</li><li>B. 同時考慮不同需求</li><li>C. 先實用再美觀</li><li>D. 不需要討論</li></ul>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>B，同時考慮不同需求。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 9 題</span><h3>補充考量</h3>
+          <p>如果你是老師，你還可能補充哪一個考量最合理？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>參考答案：</strong>例如：樹根是否會破壞地面、是否容易照顧、是否容易招蚊蟲。<br><strong>解析：</strong>重點是提出和決策相關、合理的考量。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 10 題</span><h3>主旨判斷</h3>
+          <p>這篇短文最主要想表達什麼？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>做決定時不一定只能二選一，也可以綜合不同意見，兼顧美觀與實用。</div></details>
+        </article>
       </div>
     </section>
 
@@ -70,9 +111,21 @@
         <p>從句子改寫到短文表達，重點是把意思說清楚，而且讓語句更完整。</p>
       </header>
       <div class="qa-grid">
-        <article class="qa-card"><span class="num">第 11 題</span><h3>句子改寫</h3><p>請把這句話改寫得更完整：「下雨了，我還是去上學。」</p></article>
-        <article class="qa-card"><span class="num">第 12 題</span><h3>短文說明</h3><p>請用 80～120 字說明：為什麼有些困難的事情還是值得去做？</p></article>
-        <article class="qa-card"><span class="num">第 13 題</span><h3>找出句子問題並修改</h3><p>請找出句子問題並修改：「因為她很努力，所以大家都喜歡，而且考試進步很多。」</p></article>
+        <article class="qa-card">
+          <span class="num">第 11 題</span><h3>句子改寫</h3>
+          <p>請把這句話改寫得更完整：「下雨了，我還是去上學。」</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>示例答案：</strong>雖然外面下著大雨，我還是準時背起書包去上學。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 12 題</span><h3>短文說明</h3>
+          <p>請用 80～120 字說明：為什麼有些困難的事情還是值得去做？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>示例答案：</strong>有些事情雖然困難，但在努力的過程中，我們會學到新的方法，也會讓自己更有耐心。像學騎腳踏車或練樂器，一開始常常做不好，可是只要慢慢進步，就會得到很大的成就感。所以困難不一定是壞事，常常是讓人成長的開始。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 13 題</span><h3>找出句子問題並修改</h3>
+          <p>請找出句子問題並修改：「因為她很努力，所以大家都喜歡，而且考試進步很多。」</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>示例答案：</strong>因為她很努力，考試進步很多，所以大家也更欣賞她認真的態度。</div></details>
+        </article>
       </div>
     </section>
 
@@ -82,9 +135,21 @@
         <p>重點是提出合理假設，並知道做實驗時什麼條件要控制一致。</p>
       </header>
       <div class="qa-grid">
-        <article class="qa-card"><span class="num">第 14 題</span><h3>冰塊融化</h3><p>把一塊冰放在兩個盤子上，一個放在陽光下，一個放在陰影處。哪一個會先融化？原因是什麼？</p></article>
-        <article class="qa-card"><span class="num">第 15 題</span><h3>植物生長觀察</h3><p>小芸發現同一種植物，窗邊那盆長得比較快，房間角落那盆長得比較慢。她可以提出什麼合理假設？</p></article>
-        <article class="qa-card"><span class="num">第 16 題</span><h3>實驗控制變因</h3><p>如果要驗證「植物長得快是不是因為光照較多」，做實驗時至少要控制哪些條件相同？</p></article>
+        <article class="qa-card">
+          <span class="num">第 14 題</span><h3>冰塊融化</h3>
+          <p>把一塊冰放在兩個盤子上，一個放在陽光下，一個放在陰影處。哪一個會先融化？原因是什麼？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>陽光下的冰會先融化。<br><strong>解析：</strong>因為得到較多熱能，升溫較快。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 15 題</span><h3>植物生長觀察</h3>
+          <p>小芸發現同一種植物，窗邊那盆長得比較快，房間角落那盆長得比較慢。她可以提出什麼合理假設？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>植物生長速度可能和光照有關，窗邊得到較多陽光，所以長得較快。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 16 題</span><h3>實驗控制變因</h3>
+          <p>如果要驗證「植物長得快是不是因為光照較多」，做實驗時至少要控制哪些條件相同？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>應控制植物種類、澆水量、土壤、盆器大小、觀察時間等都相同，只改變光照條件。</div></details>
+        </article>
       </div>
     </section>
 
@@ -94,10 +159,26 @@
         <p>這一區重點是不要過度推論，先判斷條件是否足夠，再決定能不能推出答案。</p>
       </header>
       <div class="qa-grid">
-        <article class="qa-card"><span class="num">第 17 題</span><h3>真假話判斷</h3><p>甲說：「今天會下雨。」乙說：「今天不會下雨。」已知兩人之中只有一人說真話。請問今天會下雨嗎？</p></article>
-        <article class="qa-card"><span class="num">第 18 題</span><h3>圖形循環</h3><p>四個圖形依序重複：○ △ □ ☆ ○ △ □ ☆……第 15 個圖形是什麼？</p></article>
-        <article class="qa-card"><span class="num">第 19 題</span><h3>標籤全錯的盒子</h3><p>有三個盒子，分別貼著「蘋果」「橘子」「蘋果和橘子」，但三個標籤全都貼錯。你只能從其中一個盒子拿出一個水果看一次，如何知道三個盒子各裝什麼？</p></article>
-        <article class="qa-card"><span class="num">第 20 題</span><h3>身高排序</h3><p>A、B、C 三人身高不同。已知 A 比 B 高，C 比 A 矮。請由高到矮排列。</p></article>
+        <article class="qa-card">
+          <span class="num">第 17 題</span><h3>真假話判斷</h3>
+          <p>甲說：「今天會下雨。」乙說：「今天不會下雨。」已知兩人之中只有一人說真話。請問今天會下雨嗎？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>無法判定。<br><strong>解析：</strong>因為「會下雨」和「不會下雨」本來就是一真一假，條件沒有增加新資訊。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 18 題</span><h3>圖形循環</h3>
+          <p>四個圖形依序重複：○ △ □ ☆ ○ △ □ ☆……第 15 個圖形是什麼？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>□。<br><strong>解析：</strong>15 ÷ 4 餘 3，所以是每輪第 3 個圖形。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 19 題</span><h3>標籤全錯的盒子</h3>
+          <p>有三個盒子，分別貼著「蘋果」「橘子」「蘋果和橘子」，但三個標籤全都貼錯。你只能從其中一個盒子拿出一個水果看一次，如何知道三個盒子各裝什麼？</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>先從貼著「蘋果和橘子」的盒子拿。<br><strong>解析：</strong>因為那盒不可能真的是混合盒。若拿到蘋果，表示那盒其實全是蘋果；再利用三個標籤都貼錯，推出另外兩盒。若拿到橘子，推法反過來。</div></details>
+        </article>
+        <article class="qa-card">
+          <span class="num">第 20 題</span><h3>身高排序</h3>
+          <p>A、B、C 三人身高不同。已知 A 比 B 高，C 比 A 矮。請由高到矮排列。</p>
+          <details class="reveal"><summary>展開答案</summary><div class="answer"><strong>答案：</strong>A 一定最高；B 和 C 的先後無法確定。<br><strong>解析：</strong>這題考的是不要超推論，只能推出條件真的保證的部分。</div></details>
+        </article>
       </div>
     </section>
   </main>

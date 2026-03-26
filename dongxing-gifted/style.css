@@ -168,6 +168,36 @@ body {
   border: 1px solid #e2e8f0;
 }
 .answer strong { color: var(--ok); }
+.reveal {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.reveal summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-weight: 800;
+  color: var(--brand-2);
+  user-select: none;
+}
+.reveal summary::-webkit-details-marker { display: none; }
+.reveal summary::after {
+  content: '＋';
+  float: right;
+  font-size: 20px;
+  line-height: 1;
+}
+.reveal[open] summary::after { content: '－'; }
+.reveal[open] summary {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,.6);
+}
+.reading-passage {
+  margin-bottom: 18px;
+}
 .footer {
   padding: 28px 0 56px;
   color: var(--muted);
